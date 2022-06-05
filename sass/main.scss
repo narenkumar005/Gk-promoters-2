@@ -1,0 +1,25 @@
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//base configuration
+@import "base/base";
+@import "base/utilities";
+//components
+@import "components/header";
+@import "components/section";
+@import "components/about";
+@import "components/aside";
+@import "components/article";
+@import "components/gallery";
+@import "components/why_choose_us";
+@import "components/brief_detail";
+@import "components/timeline";
+
+//elements
+@import "elements/accomplishments";
+@import "elements/services";
+@import "elements/dream";
+@import "elements/specifications_page";
+@import "elements/premium_package";
+@import "elements/table";

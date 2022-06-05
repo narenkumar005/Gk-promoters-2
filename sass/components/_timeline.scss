@@ -1,0 +1,40 @@
+.timeline_container {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 400px;
+  max-width: 80vw;
+  background-color: $color-gray;
+  .timeline_topsection {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .timeline_timeline {
+    position: relative;
+    min-height: 150px;
+    .timeline_line {
+      position: absolute;
+      z-index: 2;
+      width: 2px;
+      left: calc(50% - 1px);
+      top: -50px;
+      bottom: -50px;
+      background-color: $color-gold;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: $color-gold;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+}
