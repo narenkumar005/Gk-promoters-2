@@ -1,0 +1,71 @@
+.dream {
+  margin-top: 8vh;
+  width: 100vw;
+  height: 40vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.6),
+      rgba($color-black, 0.6)
+    ),
+    url("/carousel1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 3.5rem;
+    color: $color-white;
+    background-color: transparent;
+    font-weight: bold;
+  }
+
+  a {
+    margin-top: 4vh;
+    text-decoration: none;
+    color: black;
+    background-color: $color-gold;
+    padding: 0.8rem 2rem;
+    &:hover {
+      border: 1px solid $color-gold;
+      color: $color-white;
+      background-color: transparent;
+    }
+  }
+}
+
+.dream-2 {
+  margin-top: 8vh;
+  width: 100vw;
+  height: 30vh;
+  padding: 10vh 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.9)
+    ),
+    url("/carousel1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 7px solid $color-gold;
+  margin-bottom: 10vh;
+
+  h3 {
+    font-size: 2rem;
+    color: $color-gold;
+    background-color: transparent;
+    font-weight: 300;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: transparent;
+    color: $color-gold;
+  }
+}

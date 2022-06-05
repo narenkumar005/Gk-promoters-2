@@ -1,0 +1,60 @@
+.brief_detail {
+  width: 80vw;
+  margin: 5vh auto 5vh;
+  border: 1px solid $color-gold;
+  border-radius: 4px;
+  h3 {
+    background-color: $color-gold;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid $color-gold;
+    position: relative;
+    margin-bottom: 0;
+  }
+  &_inner {
+    width: 79vw;
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    padding-top: 10px;
+
+    &--left {
+      flex: 1;
+      border-right: 1px solid $color-gold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 10px;
+
+      div {
+        p {
+          background-color: inherit;
+          position: relative;
+          font-weight: bold;
+          padding-left: 10px;
+        }
+        &:hover {
+          background-color: $color-gold;
+          cursor: pointer;
+          p::after {
+            content: "";
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            background-color: $color-gold;
+            top: 10px;
+            right: -10px;
+            z-index: 1;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    &--right {
+      flex: 3;
+      position: relative;
+      padding: 1rem 2rem;
+    }
+  }
+}

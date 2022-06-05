@@ -1,0 +1,124 @@
+h3.total_cost {
+  text-align: center;
+  span {
+    font-size: 1.8rem;
+  }
+  margin-bottom: 3vh;
+}
+p.not_included {
+  font-size: 1.2rem;
+  strong {
+    font-size: 1.4rem;
+  }
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid $color-gold;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+table {
+  width: 80vw;
+  border: 1px solid $color-black;
+  margin: 0 auto 5vh;
+  height: 40vh;
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid $color-gray;
+  }
+  td:not(:last-child) {
+    border-right: 1px solid $color-gray;
+  }
+  td.work {
+    width: 35%;
+  }
+  td.area {
+    width: 37%;
+    #area {
+      outline: none;
+      text-align: center;
+      border-radius: 2px;
+      border: 1px solid $color-gray;
+      width: 96%;
+      padding: 0.25rem 0.75rem;
+      margin-left: 2%;
+      text-align: left;
+    }
+  }
+  td.area#sump {
+    input {
+      outline: none;
+      text-align: center;
+      border-radius: 2px;
+      border: 1px solid $color-gray;
+      width: 30%;
+      padding: 0.25rem;
+    }
+    #sump-2 {
+      margin: 0 3%;
+    }
+    #sump-1 {
+      margin-left: 2%;
+    }
+  }
+
+  td.area#tank {
+    input {
+      outline: none;
+      text-align: center;
+      border-radius: 2px;
+      border: 1px solid $color-gray;
+      width: 30%;
+      padding: 0.25rem;
+    }
+    #tank-2 {
+      margin: 0 3%;
+    }
+    #tank-1 {
+      margin-left: 2%;
+    }
+  }
+  td.area#wall {
+    input {
+      outline: none;
+      text-align: center;
+      border-radius: 2px;
+      border: 1px solid $color-gray;
+      width: 46.5%;
+      padding: 0.25rem;
+    }
+    #wall-2 {
+      margin-left: 3%;
+    }
+    #wall-1 {
+      margin-left: 2%;
+    }
+  }
+  td.sno {
+    width: 5%;
+    text-align: center;
+  }
+  td.unit {
+    text-align: center;
+    width: 6%;
+  }
+  td.rate {
+    width: 8%;
+    text-align: center;
+  }
+  td.cost {
+    width: 9%;
+    text-align: center;
+  }
+
+  tr.header__table {
+    td {
+      background-color: $color-gold;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+    font-weight: bold;
+    border-bottom: 1px solid $color-gray;
+  }
+}
